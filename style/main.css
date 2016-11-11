@@ -107,11 +107,13 @@ a:hover{
 	background: url(images/tel.png) 5px center no-repeat;
 }
 
+.header{
+	background-color: #ffffff;
+}
 .header .con{
 	width: 1190px;
 	height: 110px;
 	margin: 0 auto;
-	background-color: #ffffff;
 }
 .header .con .logo{
 	width: 235px;
