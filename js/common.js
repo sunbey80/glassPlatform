@@ -59,6 +59,15 @@ $(function(){
 		})
 	})
 
+	//提示登录后显示价格
+	var flag=false;
+	$(".tblHave table tbody .td5").mouseover(function(e){
+		$(this).html('<span class="green">登录后查看价格</span>');
+	})
+	$(".tblHave table tbody .td5").mouseout(function(e){
+		$(this).html('<span class="orange">￥***</span>/ 平方米');
+	})
+
 });
 
 //News scroll
