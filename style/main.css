@@ -181,6 +181,7 @@ a:hover{
 .header .con .select p{
 	line-height: 34px;
 	text-indent: 10px;
+	cursor: pointer;
 	background-color: #f7f7f7;
 }
 .header .con .select .list p.cur{
@@ -202,6 +203,21 @@ a:hover{
 	font-size: 14px;
 	background-color: #006576;
 	cursor: pointer;
+}
+.cart{
+	position: fixed;
+	right: 2px;
+	top: 65px;
+	padding: 5px;
+	z-index: 999;
+}
+.cart a{
+	display: block;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	cursor: pointer;
+	background: url(images/cart.png) 0 0 no-repeat;
 }
 
 .flashBanner .swiper-slide{
@@ -556,8 +572,19 @@ a:hover{
 	margin-top: 10px;
 }
 .bannerSecond{
-	height: 250px;
-	background: #998800;
+	height: 220px;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.bsProducts{
+	background-image: url(images/bsProducts.jpg);
+}
+.bsNews{
+	background-image: url(images/bsNews.jpg);
+}
+.bsFinance{
+	height: 380px;
+	background-image: url(images/bsFinance.jpg);
 }
 .proNavSwitch{
 	height: 50px;
@@ -574,6 +601,263 @@ a:hover{
 }
 .proNavSwitch ul li.cur{
 	background-color: #003e49;
+}
+
+.moreChoice{
+	height: 50px;
+	padding-left: 10px;
+}
+.moreChoice .moreSelect a,
+.moreChoice .moreSelect p{
+	float: left;
+	padding: 5px;
+	margin: 10px 0 0 0;
+	border: 1px solid #d4d4d4;
+	border-right: none;
+	cursor: pointer;
+}
+.moreChoice .moreSelect p.p1{
+	border: 1px solid #2c9bae;
+	padding-right: 22px;
+	margin-left: 10px;
+	background: url(images/arrow5.png) 66px center no-repeat;
+}
+.moreChoice .moreSelect a.aCur{
+	color: #2c9bae;
+	padding-right: 22px;
+	background: url(images/arrow6.png) right center no-repeat;
+}
+.moreChoice .moreSelect a.a3{
+	border-right: 1px solid #d4d4d4;
+}
+.moreChoice .moreSearch{
+	padding: 10px;
+}
+.moreChoice .moreSearch input{
+	float: right;
+}
+.moreChoice .moreSearch input.iptCom{
+	width: 260px;
+	height: 28px;
+	padding-left: 10px;
+	border: 1px solid #e8e8e8;
+}
+.moreChoice .moreSearch input.iptSub{
+	width: 40px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	background: url(images/search.png) center center no-repeat #3a3a3a;
+}
+.productsList .tblPlane{
+	display: none;
+}
+.newsList{
+	width: 1190px;
+	margin: 20px auto 0 auto;
+}
+.secondTit{
+	line-height: 50px;
+	color: #ffffff;
+	font-size: 18px;
+	text-indent: 25px;
+	background-color: #006576;
+}
+.newsListCon{
+	width: 790px;
+	background-color: #ffffff;
+}
+.newsListCon .secondConLeft{
+	padding: 20px 0;
+	border: 1px solid #d4d4d4;	
+}
+.newsListCon ul li{
+	line-height: 40px;
+	height: 40px;
+	overflow: hidden;
+}
+.newsListCon ul li:nth-child(3n){
+	border-bottom: 1px solid #d4d4d4;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.newsListCon ul li em{
+	float: right;
+	width: 13%;
+	color: #006576;
+	font-size: 16px;
+}
+.newsListCon ul li a{
+	float: left;
+	width: 86%;
+	font-size: 16px;
+	text-indent: 25px;
+}
+.tempRight{
+	width: 380px;
+	height: 970px;
+	border: 1px solid #d4d4d4;
+	background-color: #ffffff;
+}
+.dealRecent h3{
+	line-height: 48px;
+	font-size: 18px;
+	text-indent: 20px;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #d4d4d4;
+}
+.dealRecent ul{
+	padding: 10px 0 20px 0;
+}
+.dealRecent ul li{
+	line-height: 40px;
+	height: 40px;
+	overflow: hidden;
+	padding-left: 20px;
+}
+.dealRecent ul li em{
+	padding-right: 20px;
+	color: #ff7c03;
+}
+.processSecond h3{
+	line-height: 48px;
+	font-size: 18px;
+	text-indent: 20px;
+	border-top: 1px solid #d4d4d4;
+}
+.processSecond img{
+	display: block;
+	margin: 0 auto;
+}
+.bsFinance .content{
+	width: 1190px;
+	margin: 0 auto;
+}
+.bsFinance .content .apply{
+	width: 400px;
+	height: 350px;
+	float: right;
+	margin-top: 15px;
+	background-color: #ffffff;
+}
+.bsFinance .content .apply p{
+	line-height: 25px;
+	font-size: 20px;
+	font-style: italic;
+	color: #282828;
+	text-indent: 18px;
+}
+.bsFinance .content .apply p.p1{
+	padding-top: 15px;
+}
+.bsFinance .content .apply p.p2{
+	position: relative;
+	padding-left: 195px;
+	color: #ffa756;
+}
+.bsFinance .content .apply p.p2:before{
+	position: absolute;
+	left: 160px;
+	top: 10px;
+	display: block;
+	content: "";
+	width: 50px;
+	height: 2px; 
+	background-color: #ffa756;
+}
+.bsFinance .content .apply li{
+	position: relative;
+	display: block;
+	height: 40px;
+	width: 360px;
+	border: 1px solid #cccccc;
+	margin: 10px auto 0 auto;
+	border-radius: 6px;
+}
+.bsFinance .content .apply li:before{
+	content: "";
+	display: block;
+	float: left;
+	width: 49px;
+	height: 40px;
+	border-right: 1px solid #d4d4d4;
+	background-color: #eeeeee;
+	border-radius: 6px 0 0 6px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.bsFinance .content .apply li.li1:before{
+	background-image: url(images/applyIpt1.jpg);
+}
+.bsFinance .content .apply li.li2:before{
+	background-image: url(images/applyIpt2.jpg);
+}
+.bsFinance .content .apply li.li3:before{
+	background-image: url(images/applyIpt3.jpg);
+}
+.bsFinance .content .apply li.li4:before{
+	background-image: url(images/applyIpt4.jpg);
+}
+.bsFinance .content .apply input{
+	display: block;
+	width: 310px;
+	height: 40px;
+	border: none;
+	border-radius: 6px;
+	text-indent: 10px;
+}
+.bsFinance .content .apply li:last-child{
+	border-color: #ffffff;
+}
+.bsFinance .content .apply li:last-child input{
+	width: 360px;
+	background-color: #ff7c03;
+	font-size: 18px;
+	color: #ffffff;
+	cursor: pointer;
+	height: 50px;
+}
+.bsFinance .content .apply li:last-child input:hover{
+	background-color: #ff9737;
+}
+.bsFinance .content .apply li:last-child:before{
+	display: none;
+}
+.financeCon{
+	width: 1050px;
+	margin: 20px auto 0 auto;
+	padding: 20px 70px 30px 70px;
+	background-color: #ffffff;
+}
+.financeIntro{
+	width: 520px;
+}
+.financeIntro h3{
+	font-size: 36px;
+	color: #ffa858;
+	margin-bottom: 20px;
+}
+.financeIntro p{
+	line-height: 24px;
+}
+.financeIntro h4{
+	font-size: 22px;
+	color: #404040;
+	margin: 20px 0;
+	line-height: 50px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.financeIntro .financeComp a{
+	float: left;
+	width: 220px;
+	height: 80px;
+	overflow: hidden;
+	border: 1px solid #1558a9;
+	border-radius: 6px;
+}
+.financeIntro .financeComp a.a2{
+	float: right;
+	border: 1px solid #d83129;
 }
 
 /*tabel common*/
@@ -645,6 +929,28 @@ a:hover{
 	color: #ffffff;
 }
 
+/*pagination*/
+.pagination{
+	text-align: center;
+	padding: 20px 0;
+}
+.pagination a{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	padding: 0 12px;
+	border: 1px solid #e4e4e4;
+	margin: 0 1px;
+}
+.pagination a.cur{
+	background-color: #333;
+	color: #fff;
+}
+.pagination a.noUse{
+	color: #cccccc;
+}
+
 /*footer*/
 footer{
 	text-align: center;
@@ -657,6 +963,8 @@ footer .con{
 	width: 1190px;
 	margin: 0 auto;
 }
+
+
 
 
 

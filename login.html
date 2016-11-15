@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	<style>
+		body{background-color: #ffffff;}
+	</style>
+	<!--header-->
+	<div class="header">
+		<div class="con cf">
+			<div class="logo fl"></div>
+			
+		</div>
+	</div>
+
+	<!--banner-->
+	<div class="bannerSecond bsFinance">
+		<div class="content">
+			<div class="apply">
+				<p class="p1">快速申请 金融服务</p>
+				<p class="p2">解决您的资金需求</p>
+				<ul>
+					<li class="li1"><input type="text" placeholder="公司名称"></li>
+					<li class="li2"><input type="text" placeholder="融资金额/万元"></li>
+					<li class="li3"><input type="text" placeholder="联系人"></li>
+					<li class="li4"><input type="text" placeholder="联系电话"></li>
+					<li class="li5"><input type="submit" value="快速申请"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<!--footer-->
+	<footer>
+		<div class="con">
+			<p>
+				<a href="#">关于我们</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">法律声明</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">诚聘英才</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">投资洽谈</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">联系我们</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">常见问题</a>
+			</p>
+			<p>COPYRIGHT © 找钢网 zhaogang.com 沪ICP备 13013915号-3 ICP证：沪B2-20140148</p>
+			<p>商务部2015-2016年度电子商务示范企业 2016年度国家级服务业标准化试点项目 中国互联网诚信示范企业 2015年中国大宗商品现代流通诚信市场 </p>
+		</div>
+	</footer>
+
+	
+	<script>
+		$(function(){
+			//设置当前导航选中状态
+			$(".header .nav ul li").eq(4).addClass("cur");
+
+			//proNavSwitch
+			$(".proNavSwitch ul li").each(function(index){
+				$(this).click(function(){
+					$(this).addClass("cur").siblings().removeClass("cur");
+					$(".table").eq(index).show().siblings(".table").hide();
+				})
+			})
+		})
+	</script>
+</body>
+</html>

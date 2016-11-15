@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	<!--headerTop-->
+	<div class="headerTop cf">
+		<div class="con">
+			<div class="welcome fl">
+				<a href="index.html" class="a1">首页</a>
+				<p>欢迎您来到名浩玻璃！</p>
+				<a href="login.html" class="a2">登录</a>
+			</div>
+			<div class="telTop fr">400-888-88</div>
+			<div class="topNav fr">
+				<a href="community.html">我的社区</a>
+				<a href="order.html">我的订单</a>
+				<a href="rebate.html">我的返利</a>
+				<a href="stock.html">我的仓库</a>
+				<a href="javascript:void(0)" id="addFavorite">加入收藏</a>
+				<a href="javascript:void(0)" id="setHome">设为主页</a>
+			</div>
+		</div>
+	</div>
+
+	<!--header-->
+	<div class="header">
+		<div class="con cf">
+			<div class="logo fl"></div>
+			<div class="nav fl">
+				<ul class="cf">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="products.html">产品分类</a></li>
+					<li><a href="store.html">商家库存</a></li>
+					<li><a href="news.html">商情中心</a></li>
+					<li><a href="finance.html">金融服务</a></li>
+				</ul>
+			</div>
+			<div class="search fr">
+				<div class="select">
+					<p>材料</p>
+					<div class="list">
+						<p class="cur">材料</p>
+						<p>商情</p>
+						<p>物流</p>
+					</div>
+				</div>
+				<input type="text" class="iptCom" placeholder="请输入关键字进行搜索">
+				<input type="submit" value="搜索" class="iptSub">
+			</div>
+		</div>
+	</div>
+
+	<!--cart-->
+	<div class="cart">
+		<a href="#">购物车</a>
+	</div>
+
+	<!--banner-->
+	<div class="bannerSecond bsFinance">
+		<div class="content">
+			<div class="apply">
+				<p class="p1">快速申请 金融服务</p>
+				<p class="p2">解决您的资金需求</p>
+				<ul>
+					<li class="li1"><input type="text" placeholder="公司名称"></li>
+					<li class="li2"><input type="text" placeholder="融资金额/万元"></li>
+					<li class="li3"><input type="text" placeholder="联系人"></li>
+					<li class="li4"><input type="text" placeholder="联系电话"></li>
+					<li class="li5"><input type="submit" value="快速申请"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--financeCon-->
+	<div class="financeCon cf">
+		<div class="financeIntro fl">
+			<h3>金融服务介绍</h3>
+			<p>明浩金融服务是明浩玻璃网依托于自身平台优势专门为会员单位提供的一套全方位的融资服务，帮助会员单位在较短的时间内解决自身资金紧张的问题，有效发挥资金的活力，创造更大的价值。</p>
+			<h4>金融服务平台</h4>
+			<div class="financeComp cf">
+				<a href="#" class="a1"><img src="style/images/financeComp1.jpg" /></a>
+				<a href="#" class="a2"><img src="style/images/financeComp2.jpg" /></a>
+			</div>
+		</div>
+		<div class="financeImg fr">
+			<img src="style/images/financeImg.jpg" />
+		</div>
+	</div>
+
+	<!--footer-->
+	<footer>
+		<div class="con">
+			<p>
+				<a href="#">关于我们</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">法律声明</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">诚聘英才</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">投资洽谈</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">联系我们</a><a>&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">常见问题</a>
+			</p>
+			<p>COPYRIGHT © 找钢网 zhaogang.com 沪ICP备 13013915号-3 ICP证：沪B2-20140148</p>
+			<p>商务部2015-2016年度电子商务示范企业 2016年度国家级服务业标准化试点项目 中国互联网诚信示范企业 2015年中国大宗商品现代流通诚信市场 </p>
+		</div>
+	</footer>
+
+	
+	<script>
+		$(function(){
+			//设置当前导航选中状态
+			$(".header .nav ul li").eq(4).addClass("cur");
+
+			//proNavSwitch
+			$(".proNavSwitch ul li").each(function(index){
+				$(this).click(function(){
+					$(this).addClass("cur").siblings().removeClass("cur");
+					$(".table").eq(index).show().siblings(".table").hide();
+				})
+			})
+		})
+	</script>
+</body>
+</html>
