@@ -927,6 +927,91 @@ a:hover{
 	color: #ff7c03;
 }
 
+/*userCenter*/
+.userCenter .header{
+	background-color: #003e49;
+}
+.userCenter .header .con .nav ul li a{
+	color: #ffffff;
+	background: none;
+}
+.userCenter .header .con .nav ul li.cur a{
+	color: #fcde7e;
+}
+.userCenter .header .logo{
+	width: 106px;
+}
+.userCenter .header .backToMaster{
+	float: left;
+	width: 200px;
+	height: 64px;
+	margin-top: 25px;
+	border-left: 1px solid #006578;
+	padding-left: 20px;
+	margin-left: 20px;
+}
+.userCenter .header .backToMaster p{
+	color: #ffffff;
+	line-height: 24px;
+	font-size: 18px;
+	padding-bottom: 8px;
+}
+.userCenter .header .backToMaster a{
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #003e49;
+	border-radius: 8px;
+	background-color: #fcde7e;
+}
+.userCenter .header .userCart{
+	float: right;
+	width: 120px;
+	height: 38px;
+	line-height: 38px;
+	text-indent: 40px;
+	margin-top: 35px;
+	border: 1px solid #ff7d01;
+	background-color: #ffffff;
+}
+.userCenter .header .userCart a{
+	display: block;
+}
+.mainStage{
+	width: 1190px;
+	margin: 20px auto 0 auto;
+}
+.secondCon{
+	border: 1px solid #d4d4d4;
+	background-color: #ffffff;
+}
+.userIndex .ucMain{
+	padding: 45px;
+}
+.userIndex .ucMain .ucHead{
+	float: left;
+	width: 270px;
+	height: 110px;
+	padding: 20px;
+	border: 1px solid #cccccc;
+}
+.userIndex .ucMain .ucOrder{
+	float: left;
+	width: 230px;
+	height: 150px;
+	margin-left: 20px;
+	border: 1px solid #cccccc;
+}
+.userIndex .ucMain .ucRebate{
+	width: 512px;
+	float: right;
+	height: 150px;
+	border: 1px solid #cccccc;
+}
+
+
 /*tabel common*/
 .tabelTit{
 	position: relative;
