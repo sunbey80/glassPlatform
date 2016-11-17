@@ -419,6 +419,9 @@ a:hover{
 .tblPlane{
 	margin-top: 20px;
 }
+.secondCon .tblPlane{
+	margin-top: 0;
+}
 
 .transport{
 	width: 1190px;
@@ -1294,13 +1297,13 @@ a:hover{
 }
 /*btn style*/
 .btnStyle1{
-	width: 70px;
 	text-align: center;
 	display: inline-block;
 	border-radius: 13px;
 	color: #ff7c03;
 	border: 1px solid #006576;
 	cursor: pointer;
+	padding: 0 15px;
 }
 .btnStyle1:hover{
 	background-color: #006576;
