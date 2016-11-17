@@ -213,11 +213,14 @@ a:hover{
 }
 .cart a{
 	display: block;
-	width: 60px;
-	height: 60px;
-	text-indent: -9999px;
+	width: 58px;
+	height: 58px;
+	text-align: center;
+	line-height: 90px;
+	overflow: hidden;
 	cursor: pointer;
-	background: url(images/cart.png) 0 0 no-repeat;
+	border: 1px solid #ff7c03;
+	background: url(images/cart.png) center 8px no-repeat #ffffff;
 }
 
 .flashBanner .swiper-slide{
@@ -630,19 +633,19 @@ a:hover{
 .moreChoice .moreSelect a.a3{
 	border-right: 1px solid #d4d4d4;
 }
-.moreChoice .moreSearch{
+.moreSearch{
 	padding: 10px;
 }
-.moreChoice .moreSearch input{
+.moreSearch input{
 	float: right;
 }
-.moreChoice .moreSearch input.iptCom{
+.moreSearch input.iptCom{
 	width: 260px;
 	height: 28px;
 	padding-left: 10px;
 	border: 1px solid #e8e8e8;
 }
-.moreChoice .moreSearch input.iptSub{
+.moreSearch input.iptSub{
 	width: 40px;
 	height: 30px;
 	border: none;
@@ -862,9 +865,8 @@ a:hover{
 
 .login{
 	height: 500px;
-	padding-top: 120px;
-	background-color: #ff9900;
-	background-image: url(images/bsFinance.jpg);
+	padding-top: 150px;
+	background-image: url(images/bsLogin.jpg);
 }
 .login .content{
 	width: 420px;
@@ -943,7 +945,7 @@ a:hover{
 }
 .userCenter .header .backToMaster{
 	float: left;
-	width: 200px;
+	width: 100px;
 	height: 64px;
 	margin-top: 25px;
 	border-left: 1px solid #006578;
@@ -978,6 +980,7 @@ a:hover{
 }
 .userCenter .header .userCart a{
 	display: block;
+	background: url(images/cart.png) 9px 6px no-repeat #ffffff;
 }
 .mainStage{
 	width: 1190px;
@@ -985,6 +988,7 @@ a:hover{
 }
 .secondCon{
 	border: 1px solid #d4d4d4;
+	border-top: none;
 	background-color: #ffffff;
 }
 .userIndex .ucMain{
@@ -997,6 +1001,38 @@ a:hover{
 	padding: 20px;
 	border: 1px solid #cccccc;
 }
+.userIndex .ucMain .ucHead .p1{
+	float: left;
+	width: 110px;
+	margin-top: 10px;
+}
+.userIndex .ucMain .ucHead .p2{
+	float: left;
+	width: 160px;
+	height: 30px;
+	padding-top: 30px;
+}
+.userIndex .ucMain .ucHead .p3{
+	float: left;
+	width: 160px;
+	height: 50px;
+}
+.userIndex .ucMain .ucHead .p3 a{
+	float: left;
+	padding: 5px 10px;
+	background-color: #c9eff6;
+	border-radius: 3px;
+}
+.userIndex .ucMain .ucHead .p3 a.a2{
+	background-color: #f2f2f2;
+	margin-left: 10px;
+}
+.userIndex .ucMain .ucHead .p1 img{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 2px solid #ff7d01;
+}
 .userIndex .ucMain .ucOrder{
 	float: left;
 	width: 230px;
@@ -1004,12 +1040,202 @@ a:hover{
 	margin-left: 20px;
 	border: 1px solid #cccccc;
 }
+.userIndex .ucMain .ucOrder h3,
+.userIndex .ucMain .ucRebate h3{
+	height: 38px;
+	line-height: 38px;
+	text-indent: 15px;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #cccccc;
+}
+.userIndex .ucMain .ucOrder .num{
+	height: 70px;
+	text-align: center;
+	font-size: 24px;
+	color: #ff7d01;
+	line-height: 70px;
+	background: url(images/order.png) 15px center no-repeat;
+}
+.userIndex .ucMain .ucOrder .more{
+	text-align: right;
+	line-height: 38px;
+	padding-right: 20px;
+	border-top: 1px solid #cccccc;
+}
 .userIndex .ucMain .ucRebate{
 	width: 512px;
 	float: right;
 	height: 150px;
 	border: 1px solid #cccccc;
 }
+.userIndex .ucMain .ucRebate h3{
+	background: url(images/rebate.png) 470px center no-repeat #f6f6f6;
+}
+.userIndex .ucMain .ucRebate .fl{
+	padding: 10px 15px;
+	width: 200px;
+}
+.userIndex .ucMain .ucRebate .fl p{
+	line-height: 30px;
+	font-size: 15px;
+}
+.userIndex .ucMain .ucRebate .fl p span{
+	color: #ff7d01;
+}
+.userIndex .ucMain .ucRebate .fr{
+	padding: 15px;
+	width: 240px;
+}
+.userIndex .ucMain .ucRebate .fr p{
+	position: relative;
+	line-height: 36px;
+	font-size: 15px;
+	margin-bottom: 10px;
+	background-color: #fff1e4;
+	border-radius: 4px;
+	text-indent: 15px;
+}
+.userIndex .ucMain .ucRebate .fr p:after{
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	border-radius: 50%;
+	content: "";
+	background: url(images/arrow2.png) center 3px no-repeat #ffffff;
+}
+.userIndex .ucMain .ucRebate .fr p a{
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+.userIndex .ucMain .ucRebate .fr p span{
+	color: #ff7d01;
+}
+.userIndex .myOrders .tit{
+	height: 48px;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #ffd2a8;
+	background-color: #f9f9f9;
+}
+.userIndex .myOrders .tit h3{
+	line-height: 48px;
+	text-indent: 15px;
+	float: left;
+}
+.userIndex .myOrders .navSwitch{
+	height: 45px;
+	border-bottom: 1px solid #ffd2a8;
+}
+.userIndex .myOrders .navSwitch p{
+	float: left;
+	line-height: 45px;
+	text-align: center;
+	color: #ff7c03;
+	font-size: 16px;
+	width: 180px;
+}
+.userIndex .myOrders .navSwitch p a{
+	display: block;
+}
+.userIndex .myOrders .navSwitch p.cur{
+	background-color: #ff7c03;
+}
+.userIndex .myOrders .navSwitch p.cur a{
+	color: #ffffff;
+}
+.userIndex .myOrders .thead{
+	height: 45px;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e8e8e8;
+}
+.userIndex .myOrders .thead ul li{
+	float: left;
+	text-align: center;
+	line-height: 45px;
+}
+.userIndex .myOrders .thead ul li.li1,
+.userIndex .myOrders .item .itemCon ul li.li1{
+	width: 320px;
+	text-align: left;
+	text-indent: 15px;
+}
+.userIndex .myOrders .item .itemCon ul li.li1{
+	width: 530px;
+	border-left: 0;
+}
+.userIndex .myOrders .item .itemCon ul li.li1 .fl{
+	width: 400px;
+	color: #ff7c03;
+}
+.userIndex .myOrders .item .itemCon ul li.li1 .fr{
+	width: 100px;
+	padding-right: 10px;
+}
+.userIndex .myOrders .thead ul li.li2{
+	width: 230px;
+}
+.userIndex .myOrders .thead ul li.li3,
+.userIndex .myOrders .item .itemCon ul li.li2{
+	width: 210px;
+}
+.userIndex .myOrders .thead ul li.li4,
+.userIndex .myOrders .item .itemCon ul li.li3{
+	width: 160px;
+}
+.userIndex .myOrders .thead ul li.li5,
+.userIndex .myOrders .item .itemCon ul li.li4{
+	width: 150px;
+}
+.userIndex .myOrders .thead ul li.li6,
+.userIndex .myOrders .item .itemCon ul li.li5{
+	width: 100px;
+}
+.userIndex .myOrders .items{
+	padding: 15px;
+}
+.userIndex .myOrders .item .itemTit{
+	border: 1px solid #e4e4e4;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.userIndex .myOrders .item .itemTit .fl span{
+	padding-left: 5px;
+	color: #999999;
+}
+.userIndex .myOrders .item .itemTit .fl span i{
+	padding-left: 10px;
+	color: #222222;
+}
+.userIndex .myOrders .item .itemTit a.delete{
+	float: right;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin-right: 3px;
+	background: url(images/delete.png) 0 0 no-repeat;
+}
+.userIndex .myOrders .item .itemCon{
+	border: 1px solid #e8e8e8;
+	margin-bottom: 20px;
+}
+.userIndex .myOrders .item .itemCon ul li{
+	float: left;
+	text-align: center;
+	padding: 20px 0;
+	border-left: 1px solid #e8e8e8;
+}
+.userIndex .myOrders .item .itemCon ul li.li5 a{
+	color: #ffffff;
+	background-color: #ff7c03;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+
 
 
 /*tabel common*/
