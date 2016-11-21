@@ -68,6 +68,11 @@ $(function(){
 		$(this).html('<span class="orange">￥***</span>/ 平方米');
 	})
 
+	//navSwitch切换效果
+	$(".navSwitch p").click(function(){
+		$(this).addClass("cur").siblings("p").removeClass("cur");
+	})
+
 });
 
 //News scroll
