@@ -1313,8 +1313,142 @@ a:hover{
 .communityPub .btns a.aReset{
 	background-color: #272727;
 }
-
-
+/*buycar*/
+.buycar .thead{
+	height: 45px;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e8e8e8;
+}
+.buycar .thead ul li{
+	float: left;
+	text-align: center;
+	line-height: 45px;
+}
+.buycar .thead ul li.li1{
+	width: 650px;
+}
+.buycar .item .itemCon ul li.li1{
+	width: 630px;
+	text-align: left;
+	text-indent: 10px;
+	border-left: 0;
+}
+.buycar .item .itemCon ul li.li1 input{
+	margin-right: 5px;
+}
+.buycar ul li.li2{
+	width: 210px;
+}
+.buycar ul li.li3{
+	width: 160px;
+}
+.buycar ul li.li3 i{
+	float: left;
+	width: 26px;
+	height: 26px;
+	color: #fff;
+	text-align: center;
+	line-height: 26px;
+	background-color: #333;
+	cursor: pointer;
+	margin-top: -2px;
+}
+.buycar ul li.li3 i.reduce{
+	margin-left: 25px;
+}
+.buycar ul li.li3 input{
+	float: left;
+	width: 60px;
+	height: 24px;
+	margin-top: -2px;
+	line-height: 24px;
+	border: none;
+	text-align: center;
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+}
+.buycar ul li.li4{
+	width: 150px;
+}
+.buycar ul li.li5{
+	width: 100px;
+}
+.buycar .items{
+	padding: 15px;
+}
+.buycar .item .itemTit{
+	border: 1px solid #e4e4e4;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.buycar .item .itemTit .fl span{
+	padding-left: 5px;
+	color: #999999;
+}
+.buycar .item .itemTit a.delete{
+	float: right;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin-right: 3px;
+	background: url(images/delete.png) 0 0 no-repeat;
+}
+.buycar .item .itemCon{
+	border: 1px solid #e8e8e8;
+	margin-bottom: 20px;
+}
+.buycar .item .itemCon ul li{
+	float: left;
+	text-align: center;
+	padding: 20px 0;
+	height: 26px;
+	border-left: 1px solid #e8e8e8;
+}
+.buycar .item .itemCon ul li.li4 a{
+	color: #ffffff;
+	background-color: #006577;
+	padding: 8px 20px;
+	border-radius: 4px;
+}
+.buycar .item .itemCon ul li.li4 a:hover{
+	background-color: #005160;
+}
+.buycar .total{
+	height: 50px;
+	line-height: 50px;
+}
+.buycar .total .fl a{
+	color: #999999;
+	padding-left: 10px;
+}
+.buycar .total .fl input{
+	margin: 0 5px 0 11px;
+}
+.buycar .total .fr p{
+	float: right;
+	padding-left: 30px;
+}
+.buycar .total .fr p.p1 i{
+	padding: 0 5px;
+	color: #ff7c03;
+}
+.buycar .total .fr p.p2 strong{
+	padding: 0 5px;
+	color: #ff7c03;
+	font-size: 24px;
+	vertical-align: middle;
+}
+.buycar .total .fr p.p3 a{
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	width: 155px;
+	background-color: #ff7c03;
+}
+.buycar .total .fr p.p3 a:hover{
+	background-color: #ff6600;
+}
 
 
 

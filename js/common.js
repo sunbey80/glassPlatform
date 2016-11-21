@@ -73,6 +73,12 @@ $(function(){
 		$(this).addClass("cur").siblings("p").removeClass("cur");
 	})
 
+	//proNav switch
+	$(".proNav li").click(function(){
+		$(this).addClass("cur").siblings("li").removeClass("cur");
+	})
+
+
 });
 
 //News scroll
