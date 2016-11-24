@@ -74,8 +74,32 @@ $(function(){
 	})
 
 	//proNav switch
-	$(".proNav li").click(function(){
-		$(this).addClass("cur").siblings("li").removeClass("cur");
+	$(".proNav li").each(function(index){
+		$(this).click(function(){
+			$(this).addClass("cur").siblings("li").removeClass("cur");
+			$(".proSwitch").eq(index).fadeIn().siblings(".proSwitch").hide();
+		})
+	})
+
+	//canSelect
+	$(".canSelect").click(function(e){
+		var that = this;
+		e.stopPropagation();
+		$(".selectArea").hide();
+		$(this).addClass("canSelectCur").find(".selectArea").show();
+
+		$(this).find(".selectArea p").click(function(e){
+			e.stopPropagation();
+			$(this).addClass("cur").siblings("p").removeClass("cur");
+			$(".canSelect").removeClass("canSelectCur");
+			$(that).find("span").text($(this).text());
+			$(".selectArea").hide();
+		})
+
+		$("body").click(function(){
+			$(".canSelect").removeClass("canSelectCur")
+			$(".selectArea").hide();
+		})
 	})
 
 

@@ -7,7 +7,7 @@ body{
 	background-color: #f9f9f9;
 	font-family:"Arial","Microsoft YaHei";
 }
-form,ul,li,p,h1,h2,h3,h4,h5,h6,img,em,i,strong,input{
+form,ul,li,p,h1,h2,h3,h4,h5,h6,img,em,i,strong,input,textarea{
 	margin:0;
 	padding:0;
 	font-weight: normal;
@@ -17,7 +17,7 @@ img{
 	border:0 none;
 	vertical-align:middle;
 }
-input{
+input,textarea{
 	outline: none;
 }
 ul,li{
@@ -319,6 +319,9 @@ a:hover{
 	color: #ffffff;
 	line-height: 30px;
 	font-size: 12px;
+}
+.flashBanner .newsNotice ul li a:hover{
+	color: #ff9966;
 }
 
 .products{
@@ -955,6 +958,9 @@ a:hover{
 .userCenter .header{
 	background-color: #003e49;
 }
+.userCenter .header .con{
+	background-color: #003e49;
+}
 .userCenter .header .con .nav ul li a{
 	color: #ffffff;
 	background: none;
@@ -1192,6 +1198,11 @@ a:hover{
 	width: 530px;
 	border-left: 0;
 }
+.userIndex .myOrders .thead ul li.li1 .selectArea{
+	margin-left: 0;
+	left: 0;
+	text-align: left;
+}
 .userIndex .myOrders .item .itemCon ul li.li1 .fl{
 	width: 400px;
 	color: #ff7c03;
@@ -1313,6 +1324,29 @@ a:hover{
 .communityPub .btns a.aReset{
 	background-color: #272727;
 }
+.communityDetail .cdTit{
+	line-height: 30px;
+	padding-bottom: 30px;
+	font-size: 18px;
+	color: #222222;
+}
+
+.newsD .secondCon{
+	padding: 20px 50px 50px 50px;
+}
+.newsD .newsTit{
+	line-height: 80px;
+	font-size: 18px;
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.newsD .newsCon p{
+	line-height: 24px;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
 /*buycar*/
 .buycar .thead{
 	height: 45px;
@@ -1449,6 +1483,9 @@ a:hover{
 .buycar .total .fr p.p3 a:hover{
 	background-color: #ff6600;
 }
+.proSwitch{
+	display: none;
+}
 
 
 
@@ -1541,6 +1578,38 @@ a:hover{
 }
 .pagination a.noUse{
 	color: #cccccc;
+}
+
+/*canSelect*/
+.canSelect{
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	padding-right: 16px;
+	background: url(images/arrow8.png) right center no-repeat;
+	background-size: 11px auto;
+}
+.canSelectCur{
+	background-image: url(images/arrow7.png);
+}
+.canSelect .selectArea{
+	display: none;
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	width: 160px;
+	min-height: 50px;
+	margin-left: -80px;
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 2px solid #e4e4e4;
+	background-color: #f0f0f0;
+}
+.canSelect .selectArea p{
+	line-height: 34px;
+}
+.canSelect .selectArea p:hover,.canSelect .selectArea p.cur{
+	color: #ff7c03;
 }
 
 /*footer*/
