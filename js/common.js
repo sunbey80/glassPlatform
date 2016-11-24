@@ -102,6 +102,14 @@ $(function(){
 		})
 	})
 
+	//fastApply
+	$("#fastApply").click(function(){
+		$(".toast").fadeIn();
+		setTimeout(function(){
+			$(".toast").fadeOut();
+		},3000)
+	})
+
 
 });
 

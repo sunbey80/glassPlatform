@@ -62,36 +62,61 @@
 	</div>
 
 	<!--banner-->
-	<div class="bannerSecond bsFinance">
-		<div class="content">
-			<div class="apply">
-				<p class="p1">快速申请 金融服务</p>
-				<p class="p2">解决您的资金需求</p>
-				<ul>
-					<li class="li1"><input type="text" placeholder="公司名称"></li>
-					<li class="li2"><input type="text" placeholder="融资金额/万元"></li>
-					<li class="li3"><input type="text" placeholder="联系人"></li>
-					<li class="li4"><input type="text" placeholder="联系电话"></li>
-					<li class="li5"><input type="submit" value="快速申请" id="fastApply"></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	<div class="bannerSecond bsStock"></div>
 
-	<!--financeCon-->
-	<div class="financeCon cf">
-		<div class="financeIntro fl">
-			<h3>金融服务介绍</h3>
-			<p>明浩金融服务是明浩玻璃网依托于自身平台优势专门为会员单位提供的一套全方位的融资服务，帮助会员单位在较短的时间内解决自身资金紧张的问题，有效发挥资金的活力，创造更大的价值。</p>
-			<h4>金融服务平台</h4>
-			<div class="financeComp cf">
-				<a class="a1"><img src="style/images/financeComp1.jpg" /></a>
-				<a class="a2"><img src="style/images/financeComp2.jpg" /></a>
-			</div>
+	<!--storeList-->
+	<div class="productsList storeList">
+
+		<div class="table tblPlane" style="display:block;">
+			<div class="tabelTit"><span>供应商生产计划</span></div>
+			<table cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<td class="td1" style="width:25%">商家</td>
+						<td class="td2" style="width:25%">生产线</td>
+						<td class="td3" style="width:25%">品名</td>
+						<td class="td4" style="width:25%">规格</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td1 orange" rowspan="6" style="border-right:1px solid #d4d4d4">某某玻璃商</td>
+						<td class="td2">一号生产线</td>
+						<td class="td3 green">迎新浮法白玻</td>
+						<td class="td4">5mm大板</td>
+					</tr>
+					<tr>
+						<td class="td2">二号生产线</td>
+						<td class="td3 green">迎新浮法白玻</td>
+						<td class="td4">5mm大板</td>
+					</tr>
+					<tr>
+						<td class="td2">三号生产线</td>
+						<td class="td3 green">迎新浮法白玻</td>
+						<td class="td4">5mm大板</td>
+					</tr>
+					<tr>
+						<td class="td2">四号生产线</td>
+						<td class="td3 green">迎新浮法白玻</td>
+						<td class="td4">5mm大板</td>
+					</tr>
+					<tr>
+						<td class="td2">五号生产线</td>
+						<td class="td3 green">迎新浮法白玻</td>
+						<td class="td4">5mm大板</td>
+					</tr>
+					<tr>
+						<td class="td2">六号生产线</td>
+						<td class="td3 green">迎新浮法白玻</td>
+						<td class="td4">5mm大板</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-		<div class="financeImg fr">
-			<img src="style/images/financeImg.jpg" />
-		</div>
+
+
+		
+		
 	</div>
 
 	<!--footer-->
@@ -110,15 +135,11 @@
 		</div>
 	</footer>
 
-	<div class="toast">
-		<div class="toastCon">您的申请已提交，我们会进行审核并通知您！</div>
-	</div>
-
 	
 	<script>
 		$(function(){
 			//设置当前导航选中状态
-			$(".header .nav ul li").eq(4).addClass("cur");
+			$(".header .nav ul li").eq(2).addClass("cur");
 
 			//proNavSwitch
 			$(".proNavSwitch ul li").each(function(index){

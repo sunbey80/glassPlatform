@@ -1489,6 +1489,7 @@ a:hover{
 
 
 
+
 /*tabel common*/
 .tabelTit{
 	position: relative;
@@ -1610,6 +1611,32 @@ a:hover{
 }
 .canSelect .selectArea p:hover,.canSelect .selectArea p.cur{
 	color: #ff7c03;
+}
+
+/*toast*/
+.toast{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.9);
+	text-align: center;
+	z-index: 1009;
+}
+.toastCon{
+	font-size: 24px;
+	width: 600px;
+	height: 100px;
+	line-height: 96px;
+	color: #ff7c03;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -300px;
+	border: 2px solid #ff7c03;
+	border-radius: 20px;
 }
 
 /*footer*/
