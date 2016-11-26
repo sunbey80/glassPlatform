@@ -598,6 +598,9 @@ a:hover{
 .bsStock{
 	background-image: url(images/bsStock.jpg);
 }
+.bsTransport{
+	background-image: url(images/bsTransport.jpg);
+}
 .bsFinance{
 	height: 380px;
 	background-image: url(images/bsFinance.jpg);
@@ -618,13 +621,17 @@ a:hover{
 .proNavSwitch ul li.cur{
 	background-color: #003e49;
 }
+.transportList .table{
+	background-color: #ffffff;
+	border: 1px solid #d4d4d4;
+	margin-top: 10px;
+}
 
 .moreChoice{
 	height: 50px;
 	padding-left: 10px;
 }
-.moreChoice .moreSelect a,
-.moreChoice .moreSelect p{
+.moreChoice .moreSelect a{
 	float: left;
 	padding: 5px;
 	margin: 10px 0 0 0;
@@ -756,6 +763,7 @@ a:hover{
 .processSecond img{
 	display: block;
 	margin: 0 auto;
+	width: 297px;
 }
 .bsFinance .content{
 	width: 1190px;
@@ -1297,6 +1305,13 @@ a:hover{
 	height: 30px;
 	border: 1px solid #d4d4d4;
 }
+.communityPub .cpTit input.iptRadio{
+	width: auto;
+	height: 30px;
+	border: none;
+	vertical-align: middle;
+	margin-left: 30px;
+}
 .communityPub .cpCon{
 	padding-top: 20px;
 }
@@ -1486,7 +1501,61 @@ a:hover{
 .proSwitch{
 	display: none;
 }
-
+/*moreCompany*/
+.moreChoice .moreCompany{
+	position: relative;
+	float: left;
+	width: 164px;
+	height: 29px;
+	background-color: #f9f9f9;
+	z-index: 10;
+	border: 1px solid #2c9bae;
+	padding-right: 22px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.moreChoice .moreCompany p{
+	height: 29px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.moreChoice .moreCompany:before{
+	display: inline-block;
+	position: absolute;
+	right: 8px;
+	top: 14px;
+	content: "";
+	width: 12px;
+	height: 6px;
+	background: url(images/arrow1.png) 0 0 no-repeat;
+}
+.moreChoice .moreCompanyOn:before{
+	background: url(images/arrow1on.png) 0 0 no-repeat;
+}
+.moreChoice .moreCompany .list{
+	display: none;
+	margin: 0 0 0 -1px;
+	width: 300px;
+	border: 1px solid #d4d4d4;
+}
+.moreChoice .moreCompany p{
+	line-height: 29px;
+	text-indent: 10px;
+	cursor: pointer;
+	background-color: #f7f7f7;
+}
+.moreChoice .moreCompany .list p.cur{
+	color: #ff7c03;
+}
+/*forget 忘记密码*/
+.forget h3{
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid #e4e4e4;
+	color: #222;
+	margin-top: -20px;
+}
 
 
 

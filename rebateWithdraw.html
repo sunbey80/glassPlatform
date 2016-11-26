@@ -35,25 +35,36 @@
 
 	<div class="commuPage mainStage">
 		<div class="secondTit">
-			<a class="btn" href="community.html">返回列表</a>
-			我的社区
+			我的返利
 		</div>
 		<div class="secondCon">
 			
 			<div class="communityPub">
 				<div class="cpTit">
-					<h3>留言标题</h3>
+					<h3>我的返利总计: <em class="orange">12000</em></h3>
+				</div>
+				<div class="cpTit">
+					<h3>提现数额</h3>
 					<input type="text">
 				</div>
-				<div class="cpCon">
-					<h3 class="cpConTit">留言内容</h3>
-					<div class="cpDiscrib">
-						<textarea cols="30" rows="10" style="width: 100%; height: 100%; border: none;"></textarea>
-					</div>
+				<div class="cpTit">
+					<h3>银行类型</h3>
+					<select>
+						<option value="0">中国工商银行</option>
+						<option value="0">中国建设银行</option>
+						<option value="0">中国农业银行</option>
+						<option value="0">中国交通银行</option>
+						<option value="0">中国银行</option>
+						<option value="0">宁波银行</option>
+					</select>
+				</div>
+				<div class="cpTit">
+					<h3>银行帐号</h3>
+					<input type="text">
 				</div>
 				<div class="btns">
-					<a href="community.html" class="aSubmit">提交</a>
-					<a href="community.html" class="aReset">返回</a>
+					<a href="rebate.html" class="aSubmit">提现</a>
+					<a href="rebate.html" class="aReset">返回</a>
 				</div>
 			</div>
 
@@ -80,7 +91,7 @@
 	<script>
 		$(function(){
 			//设置当前导航选中状态
-			$(".header .nav ul li").eq(1).addClass("cur");
+			$(".header .nav ul li").eq(3).addClass("cur");
 		})
 	</script>
 </body>

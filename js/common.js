@@ -1,7 +1,7 @@
 $(function(){
 
 	//设置网页标题
-	var titleName = "test" //明浩玻璃信息平台
+	var titleName = "明浩玻璃信息平台" //明浩玻璃信息平台
 	$("title").html(titleName);
 
 	//加入收藏
@@ -57,6 +57,39 @@ $(function(){
 			$(".search .select").find("p").eq(0).show();
 			$(".search .select").find(".list").hide();
 		})
+	})
+
+	//选择商家
+	$(".moreChoice .moreCompany").click(function(e){
+		var self = this;
+		e.stopPropagation();
+		$(this).addClass("moreCompanyOn");
+		$(this).find(".list").show();
+
+		$(this).find(".list p").click(function(e){
+			e.stopPropagation();
+			$(this).addClass("cur").siblings("p").removeClass("cur");
+			$(".moreChoice .moreCompany").removeClass("moreCompanyOn");
+			$(self).find("p").eq(0).text($(this).text());
+			$(self).find(".list").hide();
+		})
+
+		$("body").click(function(){
+			$(".moreChoice .moreCompany").removeClass("moreCompanyOn");
+			$(".moreChoice .moreCompany").find(".list").hide();
+		})
+	})
+
+	//购物车购买数量增减
+	$(".buycarList .item ul li .reduce").click(function(){
+		var iptVal = $(this).next("input").val();
+		if(iptVal>0){
+			$(this).next("input").val(parseInt(iptVal)-1);
+		}
+	})
+	$(".buycarList .item ul li .plus").click(function(){
+		var iptVal = $(this).prev("input").val();
+		$(this).prev("input").val(parseInt(iptVal)+1);
 	})
 
 	//提示登录后显示价格
